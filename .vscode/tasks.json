@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "source \"$HOME/.nvm/nvm.sh\" && nvm use && npm run build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$tsc"
+			],
+			"label": "Build",
+			"detail": "npm run build"
+		}
+	]
+}

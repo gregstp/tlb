@@ -1,0 +1,27 @@
+{
+  "name": "tlb",
+  "version": "1.0.0",
+  "description": "Simple scripts to automate data for the Laundry Basket",
+  "bin": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck"
+  },
+  "engines": {
+    "node": "24.22.1",
+    "npm": ">=11"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "7.0.2"
+  },
+  "keywords": [],
+  "author": "gregstp@yahoo.com",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@doeixd/csv-utils": "^2.3.4",
+    "commander": "^15.0.0"
+  }
+}
