@@ -1,3 +1,4 @@
+const ROOT_URL = 'https://gregstp.github.io/tlb/';
 const BOOKMARKLET = `
 javascript: (function() {
     let token = null;
@@ -14,9 +15,10 @@ javascript: (function() {
     }
 
     if (token) {
-        window.open('file:///Users/greg/source/tlb/experiments/index.html?authtoken=' + token);
+        window.open('${ROOT_URL}?authtoken=' + token, '_blank');
     }
-})();`;
+})();
+`;
 
 addEventListener('load', () => {
     const root = document.getElementById('root');
